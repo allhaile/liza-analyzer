@@ -2,8 +2,6 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-See the root `../.claude/CLAUDE.md` for monorepo-wide architecture, commands, and a comparison of all implementations.
-
 ## Claude Agent SDK Specifics
 
 **Agent (`agent/agent.js`)** uses `query()` async generator from `@anthropic-ai/claude-agent-sdk`. Tools are registered via `createSdkMcpServer()` and passed as `mcpServers` in options. The `runAgent()` function is async and returns `{ responseText, sessionId }`.

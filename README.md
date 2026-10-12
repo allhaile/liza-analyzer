@@ -6,6 +6,18 @@ It started from the [Bolt JS starter agent](https://github.com/slack-samples/bol
 
 Clone it, point it at your own Claude access (Amazon Bedrock or an Anthropic API key), and use it as a pattern for your own agent.
 
+## A living reference
+
+This repo is a personal project that grows every week. Each update adds a new agent pattern or a Slack platform feature, built on Claude, so you can see working examples of how the pieces fit together. Watch or star the repo to follow along, and check the log below for what's new.
+
+### Build log
+
+| Week of | What was added |
+|---------|----------------|
+| 2026-10-12 | First agent: slack.dev analytics Q&A over DMs, @mentions, and passive channel listening. Code channels with a context bar, an HTML dashboard view, and session status. Slack MCP Server support. Bedrock and Anthropic API setup. |
+
+Have a feature or agent pattern you'd like to see? Open an issue.
+
 ## What's in this repo
 
 ### What the agent can do
