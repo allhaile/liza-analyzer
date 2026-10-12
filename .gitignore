@@ -1,0 +1,24 @@
+# Claude Code
+.claude/*.local.json
+
+# Environment
+.env*
+!.env.sample
+
+# Logs
+logs/
+
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+
+# OAuth
+data/installations/
+
+# Slack CLI (local app install state)
+.slack/apps.json
+.slack/apps.dev.json
+.slack/cache/
+.slack/config.json
