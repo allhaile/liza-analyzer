@@ -4,6 +4,7 @@ import { App } from '@slack/bolt';
 
 import { registerListeners } from './listeners/index.js';
 import { logger } from './logging/logger.js';
+import { startProactiveScheduler } from './proactive/index.js';
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
@@ -20,4 +21,5 @@ registerListeners(app);
 (async () => {
   await app.start();
   app.logger.info('Liza Analyzer is running!');
+  startProactiveScheduler(app);
 })();

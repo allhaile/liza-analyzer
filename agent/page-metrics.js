@@ -52,7 +52,7 @@ export function parsePageMetrics(csv) {
   });
 }
 
-function loadRows() {
+export function loadRows() {
   rowsPromise ??= readFile(DATA_FILE, 'utf8')
     .then(parsePageMetrics)
     .catch((e) => {
