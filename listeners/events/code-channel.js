@@ -2,7 +2,7 @@ import { runAgent } from '../../agent/index.js';
 import { sessionStore } from '../../thread-context/index.js';
 
 // A code channel is one session, so all of its messages share a single session key
-const CODE_CHANNEL_SESSION_KEY = 'code-channel';
+export const CODE_CHANNEL_SESSION_KEY = 'code-channel';
 
 /** @type {Map<string, boolean>} */
 const codeChannelCache = new Map();

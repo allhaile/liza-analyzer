@@ -17,6 +17,9 @@ node_modules/
 # OAuth
 data/installations/
 
+# Proactive mode state (last digest run, snoozes, dismissals)
+data/proactive-state.json*
+
 # Slack CLI (local app install state)
 .slack/apps.json
 .slack/apps.dev.json

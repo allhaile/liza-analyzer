@@ -18,7 +18,14 @@
     },
     "code_channels": {
       "enabled": true
-    }
+    },
+    "slash_commands": [
+      {
+        "command": "/liza-run-digest",
+        "description": "Run the weekly analytics digest now (posts to the alerts channel)",
+        "should_escape": false
+      }
+    ]
   },
   "oauth_config": {
     "redirect_urls": ["https://ngrok-free.app/slack/oauth_redirect"],
@@ -58,7 +65,8 @@
         "channels:manage",
         "code_channels:manage",
         "channels:read",
-        "groups:read"
+        "groups:read",
+        "commands"
       ]
     }
   },
